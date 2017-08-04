@@ -1,0 +1,362 @@
+.dialog-delete .modal-dialog{
+    width: 604px;
+}
+body, p, a, h1, h2, h3, h4, h5, h6, img, input, ul, li, ol, dl, dd, dt, button{
+    padding: 0;
+    margin: 0;
+}
+img{
+    border: 0;
+}
+input, button{
+    outline: none;
+}
+a{
+    text-decoration: none;
+}
+ul, ol, li{
+    list-style: none;
+}
+
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+
+/*-----------th--------------*/
+
+#c1-container{
+    width: 1240px;
+    margin: 0 auto;
+}
+
+#c1-table-header{
+    height: auto;
+    width: 100%;
+    padding: 40px 30px 12px;
+    border-bottom: 2px solid #ccc;
+}
+
+#c1-table-header .table-header{
+    height: 16px;
+    line-height: 16px;
+    font-size: 12px;
+    color: #666;
+}
+
+.table-header-ul{
+    height: 16px;
+    line-height: 16px;
+}
+
+.table-header-ul > li > label.checkbox{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.table-header-ul > li > label.checkbox input[type=checkbox]{
+    margin-top: 0px;
+    width: 16px;
+    height: 16px;
+}
+
+.table-header-ul  li:first-child{
+    width: 46px;
+    text-align: left;
+    margin-left: 20px;
+}
+.table-header-ul  li:nth-child(2){
+    width: 538px;
+    text-align: center;
+}
+.table-header-ul  li:nth-child(3){
+    width: 170px;
+    text-align: center;
+}
+.table-header-ul  li:nth-child(4){
+    width: 196px;
+    text-align: center;
+}
+.table-header-ul  li:nth-child(5){
+    width: 170px;
+    text-align: center;
+}
+
+/*-----------tbody---------------*/
+#c1-content{
+    height: auto;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.c1-purchaseList{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding-left: 30px;
+}
+
+.c1-purchaseList .c1-company{
+    padding: 24px 0 14px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.c1-purchaseList .c1-company>div{
+    height: 16px;
+    line-height: 16px;
+}
+
+.c1-company > div > .all-check{
+    width: 46px;
+    height: 16px;
+    line-height: 16px;
+}
+
+.c1-company > div > .all-check input[type=checkbox]{
+    width: 16px;
+    height: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.c1-company > div > p {
+    height: 16px;
+    line-height: 16px;
+    font-size: 12px;
+    color: #2f2f2f;
+}
+
+.c1-purchaseList .c1-purchaseOrders{
+    padding: 20px 0px;
+    height: 140px;
+    border-bottom: 1px dashed #e5e5e5;
+}
+
+.purchaseOrders-checkbox{
+    width: 46px;
+    height: 100px;
+    line-height: 100px;
+}
+
+.purchaseOrders-checkbox input[type=checkbox] {
+    width: 16px;
+    height: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.purchaseOrders-info{
+    width: 538px;
+    height: 100px;
+    line-height: 100px;
+}
+
+.purchaseOrders-info .info-img{
+    width: 100px;
+    height: 100px;
+    margin-left: 24px;
+    margin-right: 34px;
+}
+
+.purchaseOrders-info > article {
+    width: 346px;
+    height: 100px;
+    line-height: 17px;
+    padding: 33px 0px;
+    font-size: 14px;
+    color: #2f2f2f;
+} 
+
+.purchaseOrders-info > article span{
+    height: 34px;
+    line-height: 17px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.purchaseOrders-price{
+    height: 100px;
+    width: 170px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 14px;
+    color: #2f2f2f;
+}
+
+.purchaseOrders-price > span.integer{
+    font-size: 24px;
+    color: #2f2f2f;
+}
+
+.purchaseOrders-btn{
+    height: 100px;
+    width: 196px;
+    padding: 36px 0px 36px 49px;
+    text-align: center;
+    color: #2f2f2f;
+}
+
+.purchaseOrders-btn > button{
+    width: 28px;
+    height: 28px;
+    border: 1px solid #ccc;
+    line-height: 28px;
+    text-align: center;
+    background-color: #fff;
+    font-size: 14px;
+    color: #2f2f2f;
+}
+
+.purchaseOrders-btn > button > span.iconfont{
+    font-size: 14px;
+}
+
+.purchaseOrders-btn > button.sub-style{ 
+    border: 1px solid #e5e5e5;
+    color: #e5e5e5;
+}
+
+.purchaseOrders-btn > span {
+    width: 42px;
+    height: 28px;
+    display: block;
+    text-align: center;
+    line-height: 28px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.purchaseOrders-money {
+    height: 100px;
+    width: 170px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 14px;
+    color: #fc8a26;
+}
+
+.purchaseOrders-money > span.integer{
+    font-size: 24px;
+    color: #fc8a26;
+}
+
+.purchaseOrders-closebtn {
+    width: 60px;
+    height: 100px;
+    line-height: 100px;
+    text-align: right;
+    font-size: 16px;
+    color: #999;
+    cursor: pointer;
+}
+
+
+/*-----total---------*/
+#c1-total{
+    height: 62px;
+    line-height: 60px;
+    border-top: 2px solid #ccc;
+    background-color: #fff;
+    margin-bottom: 60px;
+    padding-left: 30px;
+}
+
+#c1-total > label.checkbox{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    font-size: 12px;
+    color: #666;
+    margin-left: 20px;
+}
+
+#c1-total > .checkbox input[type=checkbox]{
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin: 22px 6px 0 -20px;
+}
+
+#c1-total > p.delete-btn{
+    margin-left: 20px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 12px;
+    color: #666;
+    cursor: pointer;
+}
+
+#c1-total > button.settle-btn{
+    height: 60px;
+    width: 120px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    background-color: #fc8a26;
+    border: 0;
+    margin-left: 20px;
+}
+
+#c1-total > p.total-price {
+    height: 60px;
+    line-height: 60px;
+    font-size: 14px;
+    color: #fc8a26;
+}
+
+#c1-total > p.total-price-title{
+    margin-right: 10px;
+    font-size: 14px;
+    color: #2f2f2f;
+}
+
+#c1-total > p.total-price > span.integer {
+    font-size: 24px;
+}
+
+#c1-total > p.con-txt-style{
+    height: 60px;
+    line-height: 60px;
+    font-size: 14px;
+    color: #2f2f2f;
+    margin-right: 18px;
+}
+
+.purchase-order-empty{
+    padding-top:140px;
+    padding-bottom: 168px;
+    margin: 0 auto;
+    /*display: none;*/
+}
+.purchase-order-empty>dt{
+    margin: 0 auto;
+    width: 208px;
+    margin-bottom: 40px;
+}
+.purchase-order-empty>dd{
+    font-size: 14px;
+    color: #2f2f2f;
+}
+.purchase-order-empty>dd p{
+    text-align: center;
+}
+.purchase-order-empty-size-small{
+    font-size: 14px;
+    color: #2f2f2f;
+    margin-bottom: 20px;
+}
+.purchase-order-empty-size-large{
+    font-size: 16px;
+    color: #2f2f2f;
+    margin-bottom: 8px;
+}
+.purchase-order-empty-size-large a{
+    color: #fc8a26;
+}
+

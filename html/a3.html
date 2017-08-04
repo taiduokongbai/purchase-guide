@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>电商导购</title>
+    <!-- Bootstrap -->
+    <link href="../css/base/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/base/bootstrap-theme.css" rel="stylesheet">
+    <link href="../css/iconfont.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+    <!-- 下面导入插件所需样式 -->
+    <link href="../css/plugins/bootstrap-select.css" rel="stylesheet">
+    <!-- 下面导入页面所需样式，最好基于bootstrap写法 -->
+    <link href="../css/c1.css" rel="stylesheet">
+    <link href="../css/chenkin.css" rel="stylesheet">
+</head>
+<body>
+<header class="main-header">
+    这是头部导航
+</header>
+<div class="main">
+    <div class="content">
+        <div class="imag-banner"><img src="../images/checkinbanner.png">
+            <div class="main-form">
+                <p class="form-title">商家申请入住</p>
+                <div class="form-data">
+                    <form  class="form-items" id="formData"  method="post" action="http://10.99.2.70:9097/basic/address/update">
+                       <ul class="form-ul">
+                           <li><p class="li-title"><span>公司名称<label></label></span><span class="li-right-title">带<label></label>为必填项</span></p>
+                               <input class="input-type-long" type="text" name="company" placeholder="请填写公司的名称，限50字"></li>
+                           <li>
+                               <p class="li-first-title"><span>公司地址</span></p>
+                               <div id="element_id">
+                                   <select name="province" class="province select-type"></select>
+                                   <select name="city" class="city select-type select-left"></select>
+                                   <select name="area"  class="area select-type select-left"></select>
+                                   <input name="address" class="address-detail" type="text"  placeholder="请输入详细地址">
+                               </div>
+                           </li>
+                           <li>
+                               <p  class="li-title"><span>联系人<label></label></span><span class="li-right-item">手机号<label></label></span></p>
+                               <input name="name" class="input-type-short" type="text"  placeholder="请输入姓名">
+                               <input name="phone" class="input-type-short input-phone"  type="text"  placeholder="请输入手机号">
+                           </li>
+                           <li>
+                               <p class="li-sec-title"><span>邮箱</span><span class="li-right-profession">所属行业</span></p>
+                               <input name="email" type="text" class="input-type-short"  placeholder="请输入邮箱地址">
+                               <select name="profession" class="profession" placeholder="请选择">
+                                   <option value ="金融">金融</option>
+                                   <option value ="IT">IT</option>
+                                   <option value ="房东">房东</option>
+                               </select>
+                           </li>
+                           <li ><p class="li-sec-title"><span >补偿说明</span></p>
+                              <textarea name="remark" class="input-textarea" placeholder="限500中文"></textarea>
+                           </li>
+                       </ul>
+                        <div class="btn-div">
+                            <button class="summit-btn" type="submit">申请入住</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="pop-window" id="myModal" class="modal fade">
+   <p class="iconfont icon-success"></p>
+    <p class="confirm-content">入驻申请已提交，客户人员将尽快与您取得联系。</p>
+    <button class="confirm bootbox-close-button">确认</button>
+</div>
+<footer class="main-footer">
+    这是底部导航
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="../js/base/jquery.min.js"></script>
+<script src="../js/base/bootstrap.min.js"></script>
+<!-- 自定义插件 -->
+<script src="../js/plugins/bootbox.min.js"></script>
+<script src="../js/plugins/bootstrap-select.min.js"></script>
+<!-- 页面JS文件 -->
+<script src="../js/a1.js"></script>
+<script src="../js/plugins/cxselect/jquery.cxselect.js"></script>
+<script>
+    var cxSelectApi;
+    $.cxSelect.defaults.url = '../js/plugins/cxselect/cityData.min.json';
+    cxSelectApi = $.cxSelect($('#element_id'), {
+        selects: ['province', 'city', 'area'],
+    });
+    var frm = $('#formData');
+    frm.submit(function (ev) {
+        $.ajax({
+            type: frm.attr('method'),
+            url: frm.attr('action'),
+            data: frm.serialize(),
+            dataType:'JSON',
+            success: function (data) {
+                var dialog = bootbox.dialog({
+                    className:"myModal",
+                    message: $("#myModal").html(),
+                });
+            }
+        });
+
+        ev.preventDefault();
+    })
+
+    $("#myModal").modal({
+        "backdrop"  : "static",
+        "keyboard"  : true,
+        "show"      : false
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+.dialog-address-box .modal-dialog {
+  width: 880px;
+}
+.dialog-address-box .modal-dialog .address-dialog-warp {
+  overflow: auto;
+  padding: 10px 77px;
+}
+.dialog-address-box .modal-dialog .address-dialog-warp .address-map-box {
+  width: 695px;
+  height: 333px;
+  background-color: red;
+}
+.dialog-address-box .modal-dialog .address-dialog .row-flex {
+  margin-bottom: 30px;
+}
+.dialog-address-box .modal-dialog .address-dialog .row-flex .item-flex-lab {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #373D44;
+  margin-bottom: 6px;
+}
+.dialog-address-box .modal-dialog .address-dialog .row-flex .item-flex-lab .error {
+  color: red;
+}
+.dialog-address-box .modal-dialog .address-dialog .row-flex .item-flex-input {
+  display: block;
+  padding: 12px;
+  /*      border: 1px solid #CDD4DC;*/
+  font-size: 12px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.dialog-address-box .modal-dialog .address-dialog .row-flex .item-flex-last {
+  display: inline-flex;
+  width: 120px;
+}
+.dialog-address-box .modal-dialog .address-dialog .row-flex .selectpicker-flex {
+  display: flex;
+  flex-direction: row;
+}
+.dialog-address-box .modal-dialog .address-dialog .row-flex .selectpicker-flex .selectpicker-warp {
+  padding-right: 20px;
+}
+.dialog-address-box .modal-dialog .address-dialog .row-flex .item-flex {
+  flex: 1;
+}
+.dialog-address-box .modal-dialog .address-dialog .row-flex .item-flex button {
+  padding: 8px 12px;
+  border-radius: 0px;
+}
+.dialog-address-box .modal-dialog .address-dialog input,
+.dialog-address-box .modal-dialog .address-dialog button {
+  border: 1px solid  #CCCCCC;
+  color: #999999;
+}
+.tangram-suggestion-main {
+  z-index: 99999;
+}

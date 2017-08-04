@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>电商导购</title>
+    <!-- Bootstrap -->
+    <link href="../css/base/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/base/bootstrap-theme.css" rel="stylesheet">
+    <link href="../css/iconfont.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+    <!-- 下面导入插件所需样式 -->
+    <link href="../css/plugins/bootstrap-select.css" rel="stylesheet">
+    <!-- 下面导入页面所需样式，最好基于bootstrap写法 -->
+    <link href="../css/c4.css" rel="stylesheet">
+</head>
+<body>
+<header class="main-header">
+    <div class="container">
+        <div class="header-logo"><img src="../images/logo.png" alt=""></div>
+        <div class="header-top">
+            <div class="header-top-left">
+                <span class="header-top-left-tit">海底世界欢迎你</span>
+                <span class="header-top-left-tit">登录</span>
+                <span class="header-top-left-tit-next">申请入驻</span>
+            </div>
+            <div class="header-top-rigth">
+                <span class="header-top-left-tit">进货单<span class="header-top-rigth-number">99</span></span>
+                <span class="header-top-left-tit">帮助中心</span>
+                <span class="header-top-left-tit-next">客服中心</span>
+            </div>
+        </div>
+        <div class="hearder-down">
+            <div class="hearder-down-left">
+                <ul>
+                    <li class="hearder-down-left-tit li">首页</li>
+                    <li class="hearder-down-left-tit-next li">工厂直销
+                        <span class="bs-caret"><span class="caret"></span></span>
+                        <ul class="hearder-down-left-con">
+                            <li>海绵宝宝</li>
+                            <li>海绵宝宝</li>
+                            <li>海绵宝宝</li>
+                            <li>海绵宝宝</li>
+                        </ul>
+                    </li>
+                    <li class="hearder-down-left-tit-next li">
+                        <a href="#">按需定制</a>
+                    </li>
+                    <li class="hearder-down-left-tit-next li">
+                        <a href="#">供应链金融</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hearder-down-rigth">
+                <div class="hearder-down-right-search">
+                    <input class="hearder-down-right-input" type="text" placeholder="搜索商品">
+                    <span class="iconfont icon-search"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!--商品列表搜索结果-->
+<div class="main">
+    <div id="goods-search-list">
+        <div class="top">
+            <div class="goods-category">
+                <div class="title">
+                    商品分类：
+                </div>
+                <ul class="first-content">
+                    <li class="first active">全部</li>
+                    <li class="first">机械制造</li>
+                    <li class="first">汽车用品</li>
+                    <li class="first">服装布料</li>
+                    <li class="first">加工服务</li>
+                    <li class="first">办公用品</li>
+                </ul>
+                <ul class="second-content">
+                    <li class="second active">全部</li>
+                    <li class="second">机械制造</li>
+                    <li class="second">汽车用品</li>
+                    <li class="second">服装布料</li>
+                    <li class="second">加工服务</li>
+                    <li class="second">办公用品</li>
+                </ul>
+                <ul class="third-content">
+                    <li class="third active">全部</li>
+                    <li class="third">机械制造</li>
+                    <li class="third">汽车用品</li>
+                    <li class="third">服装布料</li>
+                    <li class="third">加工服务</li>
+                    <li class="third">办公用品</li>
+                </ul>
+            </div>
+            <div class="price">
+                <div class="title">
+                    价格：
+                </div>
+                <ul class="content">
+                    <li class="total-price interval-price active">全部</li>
+                    <li class="interval-price">￥0-￥999</li>
+                    <li class="interval-price">￥1000-￥1999</li>
+                    <li class="interval-price">￥2000-￥9999</li>
+                    <li class="interval-price">￥10000-￥19999</li>
+                    <li class="interval-price">￥20000-￥99999</li>
+                    <li class="interval-price">10万以上</li>
+                </ul>
+            </div>
+        </div>
+        <div class="list">
+            <ul class="sort">
+                <li class="sort-content sort-default active">默认排序</li>
+                <li class="sort-content sort-choose sort-time">上架时间<span class="iconfont icon-order-default"></span></li>
+                <li class="sort-content sort-choose sort-price">价格<span class="iconfont icon-order-default"></span></li>
+                <li>为您找到了<span>637</span>条结果</li>
+            </ul>
+            <ul class="goods-list">
+                <li class="change">
+                    <a class="per-goods" href="#">
+                        <img class="img" src="../images/good-list1.png">
+                        <div class="name">因特异轮胎三能EXCELLENCE235/60R18103WGoodyear[奥迪Q5原配]</div>
+                        <div class="price-inventory">
+                            <span class="ren">￥</span>
+                            <span class="int-money">719</span>
+                            <span class="point-money">.00</span>
+                            <b></b>
+                            <span class="inventory">库存839件</span>
+                        </div>
+                        <div class="company-name">上海卡卡汽车原配有限公司</div>
+                    </a>
+                </li>
+                <li class="change">
+                    <a class="per-goods" href="#">
+                        <img class="img" src="../images/good-list1.png">
+                        <div class="name">因特异轮胎三能EXCELLENCE235/60R18103WGoodyear[奥迪Q5原配]</div>
+                        <div class="price-inventory">
+                            <span class="ren">￥</span>
+                            <span class="int-money">719</span>
+                            <span class="point-money">.00</span>
+                            <b></b>
+                            <span class="inventory">库存839件</span>
+                        </div>
+                        <div class="company-name">上海卡卡汽车原配有限公司</div>
+                    </a>
+                </li>
+                <li class="change">
+                    <a class="per-goods" href="#">
+                        <img class="img" src="../images/good-list1.png">
+                        <div class="name">因特异轮胎三能EXCELLENCE235/60R18103WGoodyear[奥迪Q5原配]</div>
+                        <div class="price-inventory">
+                            <span class="ren">￥</span>
+                            <span class="int-money">719</span>
+                            <span class="point-money">.00</span>
+                            <b></b>
+                            <span class="inventory">库存839件</span>
+                        </div>
+                        <div class="company-name">上海卡卡汽车原配有限公司</div>
+                    </a>
+                </li>
+                <li class="change">
+                    <a class="per-goods" href="#">
+                        <img class="img" src="../images/good-list1.png">
+                        <div class="name">因特异轮胎三能EXCELLENCE235/60R18103WGoodyear[奥迪Q5原配]</div>
+                        <div class="price-inventory">
+                            <span class="ren">￥</span>
+                            <span class="int-money">719</span>
+                            <span class="point-money">.00</span>
+                            <b></b>
+                            <span class="inventory">库存839件</span>
+                        </div>
+                        <div class="company-name">上海卡卡汽车原配有限公司</div>
+                    </a>
+                </li>
+                <li class="change">
+                    <a class="per-goods" href="#">
+                        <img class="img" src="../images/good-list1.png">
+                        <div class="name">因特异轮胎三能EXCELLENCE235/60R18103WGoodyear[奥迪Q5原配]</div>
+                        <div class="price-inventory">
+                            <span class="ren">￥</span>
+                            <span class="int-money">719</span>
+                            <span class="point-money">.00</span>
+                            <b></b>
+                            <span class="inventory">库存839件</span>
+                        </div>
+                        <div class="company-name">上海卡卡汽车原配有限公司</div>
+                    </a>
+                </li>
+            </ul>
+            <nav class="page" aria-label="...">
+                <ul class="pagination">
+                    <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">2 <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">3 <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">4 <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">5 <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">... <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">10 <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">11 <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+                </ul>
+                <div class="jump">
+                    <span class="jump-text">调至</span>
+                    <input class="input" type="number">
+                    <a href="#" class="go">GO</a>
+                </div>
+            </nav>
+            <ul class="recommend-goods">
+                <li>
+                    <a href="#">
+                        <img class="img" src="../images/recommend-goods1.png">
+                        <div class="introduce">
+                            <div class="recommend-name">巴拉巴拉小魔仙巴拉巴拉小魔仙巴拉巴拉小魔仙巴拉巴拉小魔仙巴拉巴拉小魔仙巴拉巴拉小魔仙巴拉巴拉小魔仙巴拉巴拉小魔仙巴拉巴拉小魔仙</div>
+                            <div class="recommend-price">
+                                <span class="ren">￥</span>
+                                <span class="int-money">999</span>
+                                <span class="point-money">.99</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="img" src="../images/recommend-goods1.png">
+                        <div class="introduce">
+                            <div class="recommend-name">巴拉巴拉小魔仙巴拉巴拉小魔仙巴拉巴拉小魔仙</div>
+                            <div class="recommend-price">
+                                <span class="ren">￥</span>
+                                <span class="int-money">999</span>
+                                <span class="point-money">.99</span>
+                            </div>
+                        </div>
+                        <div class="recommend-text">
+                            荐
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="return-top">
+        <span class="iconfont icon-top"></span>
+    </div>
+    <dl class="purchase-order-empty" style="width:392px;">
+        <dt><img src="../images/c2-3.png"/></dt>
+        <dd>没有找到您想要的商品，请检查查找条件或通过品类进行搜索。</dd>
+    </dl>
+</div>
+<footer class="main-footer">
+    这是底部导航
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="../js/base/jquery.min.js"></script>
+<script src="../js/base/bootstrap.min.js"></script>
+<!-- 自定义插件 -->
+<script src="../js/plugins/bootbox.min.js"></script>
+<script src="../js/plugins/bootstrap-select.min.js"></script>
+<!-- 页面JS文件 -->
+<script src="../js/c4.js"></script>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>电商导购</title>
+    <!-- Bootstrap -->
+    <link href="../css/base/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/base/bootstrap-theme.css" rel="stylesheet">
+    <link href="../css/iconfont.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+    <!-- 下面导入插件所需样式 -->
+    <link href="../css/plugins/bootstrap-select.css" rel="stylesheet">
+    <!-- 下面导入页面所需样式，最好基于bootstrap写法 -->
+    <link href="../css/dialogBase.css" rel="stylesheet">
+    <link href="../css/c1.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main" id='c1-container'>
+        <!--header-->
+        <div id='c1-table-header'>
+            <div class='table-header'>
+                <ul class='table-header-ul'>
+                    <li class="left">
+                        <label class="checkbox">
+                            <input type="checkbox" name='checkAll' /> 全选
+                        </label>
+                    </li>
+                    <li class="left">商品</li>
+                    <li class="left">单价</li>
+                    <li class="left">数量</li>
+                    <li class="left">金额</li>
+                </ul>
+            </div>
+        </div>
+        <!--body-->
+        <div id='c1-content'>
+            <!--所有进货单-->
+            <div class='c1-purchaseList'>
+                <!--某公司-->
+                <div class='c1-company'>
+                    <div>
+                        <div class='left all-check'>
+                            <!--全选-->
+                            <input identify="x100" type="checkbox" name='check-part' />
+                        </div>
+                        <p class='left c1-companyname'>卖方：<span>曼威信息技术(上海)有限公司</span></p>
+                    </div>
+                </div>
+                <!--list01-->
+                <div class='c1-purchaseOrders'>
+                    <div class='left purchaseOrders-checkbox'>
+                        <!--checkbox-->
+                        <input identify="x100_0" type="checkbox" name='check-self' />
+                    </div>
+                    <div class='left purchaseOrders-info'>
+                        <img src="../images/c1-pic.png" alt="" class='info-img left'>
+                        <article class="left">
+                            <span>扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉啊来吧来吧来</span>
+                        </article>
+                    </div>
+                    <div class='left purchaseOrders-price'>
+                        ￥<span class='integer'>4</span>.<span class='decimal'>5</span>
+                    </div>
+                    <div class="left purchaseOrders-btn">
+                        <button class="left btn-sub sub-style"><span class='iconfont icon-minus'></span></button>
+                        <span class="left btn-num">1</span>
+                        <button class="left btn-plus"><span class='iconfont icon-plus'></span></button>
+                    </div>
+                    <div class='left purchaseOrders-money'>
+                        ￥<span class='integer'>4</span>.<span class='decimal'>50</span>
+                    </div>
+                    <div class="left purchaseOrders-closebtn"><span class='iconfont icon-delete'></span></div>
+                    <script type="text/xhtml" id="dialog-delete">
+                        <form class="form-horizontal">
+                            <div id="dialog-box">
+                                <div class="dialog-box">
+                                    <span class="iconfont icon-warning"></span>
+                                    <p class="text-center">确定要删除2个商品吗？</p>
+                                    <p class="text-center">
+                                        <button id="btn_ok" type="button" class="btn btn-primary" style="margin-top: 22px;margin-bottom: 39px;">确定</button>
+                                        <button id="btn_close" type="button" class="btn btn-default" style="margin-top: 22px;margin-bottom: 39px; margin-left: 40px;">返回</button>
+                                    </p>
+                                </div>
+                            </div>
+                        </form>
+                    </script>
+
+                </div>
+                <!--list02-->
+                <div class='c1-purchaseOrders'>
+                    <div class='left purchaseOrders-checkbox'>
+                        <!--checkbox-->
+                        <input identify="x100_1" type="checkbox" name='check-self' />
+                    </div>
+                    <div class='left purchaseOrders-info'>
+                        <img src="../images/c1-pic.png" alt="" class='info-img left'>
+                        <article class="left">
+                            <span>扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉啊来吧来吧来</span>
+                        </article>
+                    </div>
+                    <div class='left purchaseOrders-price'>
+                        ￥<span class='integer'>4</span>.<span class='decimal'>5</span>
+                    </div>
+                    <div class="left purchaseOrders-btn">
+                        <button class="left btn-sub sub-style"><span class='iconfont icon-minus'></span></button>
+                        <span class="left btn-num">1</span>
+                        <button class="left btn-plus"><span class='iconfont icon-plus'></span></button>
+                    </div>
+                    <div class='left purchaseOrders-money'>
+                        ￥<span class='integer'>4</span>.<span class='decimal'>50</span>
+                    </div>
+                    <div class="left purchaseOrders-closebtn"><span class='iconfont icon-delete'></span></div>
+                </div>
+            </div>
+            <div class='c1-purchaseList'>
+                <!--某公司-->
+                <div class='c1-company'>
+                    <div>
+                        <div class='left all-check'>
+                            <!--全选-->
+                            <input identify='x200' type="checkbox" name='check-part' />
+                        </div>
+                        <p class='left c1-companyname'>卖方：<span>曼威信息技术(上海)有限公司</span></p>
+                    </div>
+                </div>
+                <!--list01-->
+                <div class='c1-purchaseOrders'>
+                    <div class='left purchaseOrders-checkbox'>
+                        <!--checkbox-->
+                        <input identify='x200_0' type="checkbox" name='check-self' />
+                    </div>
+                    <div class='left purchaseOrders-info'>
+                        <img src="../images/c1-pic.png" alt="" class='info-img left'>
+                        <article class="left">
+                            <span>扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉啊来吧来吧来</span>
+                        </article>
+                    </div>
+                    <div class='left purchaseOrders-price'>
+                        ￥<span class='integer'>3</span>.<span class='decimal'>3</span>
+                    </div>
+                    <div class="left purchaseOrders-btn">
+                        <button class="left btn-sub sub-style"><span class='iconfont icon-minus'></span></button>
+                        <span class="left btn-num">1</span>
+                        <button class="left btn-plus"><span class='iconfont icon-plus'></span></button>
+                    </div>
+                    <div class='left purchaseOrders-money'>
+                        ￥<span class='integer'>3</span>.<span class='decimal'>30</span>
+                    </div>
+                    <div class="left purchaseOrders-closebtn"><span class='iconfont icon-delete'></span></div>
+                </div>
+                <!--list02-->
+                <div class='c1-purchaseOrders'>
+                    <div class='left purchaseOrders-checkbox'>
+                        <!--checkbox-->
+                        <input identify='x200_1' type="checkbox" name='check-self' />
+                    </div>
+                    <div class='left purchaseOrders-info'>
+                        <img src="../images/c1-pic.png" alt="" class='info-img left'>
+                        <article class="left">
+                            <span>扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉啊来吧来吧来</span>
+                        </article>
+                    </div>
+                    <div class='left purchaseOrders-price'>
+                        ￥<span class='integer'>3</span>.<span class='decimal'>5</span>
+                    </div>
+                    <div class="left purchaseOrders-btn">
+                        <button class="left btn-sub sub-style"><span class='iconfont icon-minus'></span></button>
+                        <span class="left btn-num">1</span>
+                        <button class="left btn-plus"><span class='iconfont icon-plus'></span></button>
+                    </div>
+                    <div class='left purchaseOrders-money'>
+                        ￥<span class='integer'>3</span>.<span class='decimal'>50</span>
+                    </div>
+                    <div class="left purchaseOrders-closebtn"><span class='iconfont icon-delete'></span></div>
+                </div>
+            </div>
+        </div>
+
+        <!--total-->
+        <div id='c1-total'>
+            <label class="left checkbox">
+                <input type="checkbox" name='checkAllGoods' /> 全选
+            </label>
+            <p class='left delete-btn'>批量删除</p>
+            <button class='right settle-btn'>结算</button>
+            <p class='right total-price'>￥ <span class='integer'>9999</span>.<span class='decimal'>99</span> </p>
+            <p class='right total-price-title'>商品总金额(含税)：</p>
+            <p class='right total-num  con-txt-style'>数量总计：<span>4</span></p>
+            <p class='right goods-types  con-txt-style'>商品种类：<span>4</span>种</p>
+            <p class='right sellers  con-txt-style'>卖家：<span>2</span>家</p>
+        </div>
+    </div>
+    <dl class="purchase-order-empty" style="width:252px;">
+        <dt><img src="../images/c2-5.png" /></dt>
+        <dd>
+            <p class="purchase-order-empty-size-small">您的进货单空空如也，快去选择商品吧。</p>
+            <p class="purchase-order-empty-size-large">前往&nbsp;&nbsp;<a href="###">首页</a></p>
+            <p class="purchase-order-empty-size-large">前往&nbsp;&nbsp;<a href="###">工厂直销</a></p>
+        </dd>
+    </dl>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../js/base/jquery.min.js"></script>
+    <script src="../js/base/bootstrap.min.js"></script>
+    <!-- 自定义插件 -->
+    <script src="../js/plugins/bootbox.min.js"></script>
+    <script src="../js/plugins/bootstrap-select.min.js"></script>
+    <!-- 页面JS文件 -->
+    <script src="../js/c1.js"></script>
+</body>
+
+</html>

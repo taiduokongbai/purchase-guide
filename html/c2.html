@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>电商导购</title>
+    <!-- Bootstrap -->
+    <link href="../css/base/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/base/bootstrap-theme.css" rel="stylesheet">
+    <link href="../css/iconfont.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+    <!-- 下面导入插件所需样式 -->
+    <link href="../css/plugins/bootstrap-select.css" rel="stylesheet">
+    <!-- 下面导入页面所需样式，最好基于bootstrap写法 -->
+    <link href="../css/dialogBase.css" rel="stylesheet">
+    <link href="../css/c2.css" rel="stylesheet">
+    <!-- 新增修改收货地址 弹出框-->
+    <link href="../css/address.dialog.css" rel="stylesheet">
+</head>
+<body>
+<header class="main-header" id="c2-header">
+    <div class="c2-header-title">
+        <div class="c2-header-content">
+            <div class="c2-header-content-left left"><span class="left">您好，KONG！</span><span class="left">退出</span>
+            </div>
+            <!--<ul class="c2-header-content-right right">
+                <li class="left">进货单</li>
+                <li class="left">99</li>
+                <li class="left">电商管理中心</li>
+                <li class="left">我的工作台</li>
+                <li class="left">帮助中心</li>
+                <li class="left">客服中心</li>
+            </ul>-->
+        </div>
+    </div>
+    <div class="c2-header-title-bottom">
+        <img src="../images/logo.png" class="C2-logo"/>
+        <h3 class="left">订单提交</h3>
+    </div>
+</header>
+<form>
+    <div class="main" id='c2-container'>
+        <!--confirm-receipt-information-->
+        <div class="confirm-receipt-information">
+            <h3>确认收货信息</h3>
+            <div class="select-contacts left">
+                <div class="select-contacts-title">
+                    <h3 class="left">选择联系人</h3>
+                    <h3 class="right select-contacts-title-two">新增临时联系人</h3>
+                    <script type="text/xhtml" id="dialog-add-contact">
+                        <form class="form-horizontal">
+                            <div id="dialog-box">
+                                <div class="dialog-box" style="margin:15px 65px;">
+                                    <p class="text-left">联系人姓名<span class="dialog-star">*</span></p>
+                                    <input type="text" placeholder="请输入联系人姓名" class="dialog-input-text"
+                                        style="width:440px"/>
+                                    <p class="text-left">联系人电话<span class="dialog-star">*</span></p>
+                                    <input type="text" placeholder="请输入联系人电话（手机）" class="dialog-input-text"
+                                        style="width:440px"/>
+                                    <p class="text-left text-left-alert">新增联系人仅为临时联系人，不存储在任何地方</p>
+                                </div>
+                                <div class="modal-footer" style="margin-bottom:-15px;">
+                                    <button type="button" id="btn_close" class="btn btn-default" data-dismiss="modal" style="padding:6px 33px;">取消</button>
+                                    <button type="button" id="btn_ok" class="btn btn-primary" style="padding:6px 33px; margin-left:30px;">保存</button>
+                                </div>
+                            </div>
+                        </form>
+                    </script>
+                </div>
+                <select class="selectpicker" title="请选择联系人" data-width="530px">
+                    <option>eee</option>
+                    <option>Ketchup</option>
+                    <option>Relish</option>
+                </select>
+            </div>
+            <div class="select-shipping-address right">
+                <div class="select-shipping-address-title">
+                    <h3 class="left">选择收货地址</h3>
+                    <h3 class="right select-shipping-address-title-two" id="handler-address-dialog">新增收货地址</h3>
+                </div>
+                <select class="selectpicker" title="选择收货地址,仅为公司地址库中拥有收货地址属性的地址和站点" data-width="530px">
+                    <option>eee</option>
+                    <option>Ketchup</option>
+                    <option>Relish</option>
+                </select>
+            </div>
+            <div class="confirm-receipt-information-border"></div>
+            <div class="confirm-invoice-information">
+                <h3>确认发票信息</h3>
+                <div class="confirm-info">
+                    <span class="new-invoice-information" id="new-invoice">新增发票信息</span>
+                    <span class="new-invoice-information-show" style="display:none">
+                        <span>普通发票</span><span>曼威信息技术(上海)有限公司</span><span>修改发票信息</span>
+                        </span>
+                    <script type="text/xhtml" id="dialog-add-invoice">
+                        <form class="form-horizontal">
+                            <div id="dialog-box">
+                                <div class="dialog-box" style="margin:15px 65px;">
+                                    <p class="text-left">发票类型<span class="dialog-star">*</span></p>
+                                    <label for="ordinary" class="dialog-ordinary"><input type="radio" name="invoiceType" checked id="ordinary" class="dialog-radio"/>普通发票</label>
+                                    <label for="vad"><input type="radio" name="invoiceType" id="vad" class="dialog-radio"/>增值税发票</label>
+                                    <p class="text-left">发票抬头<span class="dialog-star">*</span></p>
+                                    <input type="text" placeholder="请输入发票抬头名称" class="dialog-input-text"/>
+                                    <p class="text-left">备注信息</p>
+                                    <textarea placeholder="如有特殊说明，请写在此处，限制200字" style="resize:none"></textarea>
+                                </div>
+                                <div class="modal-footer" style="margin-bottom:-15px;">
+                                    <button type="button" id="btn_close" class="btn btn-default" data-dismiss="modal" style="padding:6px 33px;">取消</button>
+                                    <button type="button" id="btn_ok" class="btn btn-primary" style="padding:6px 33px; margin-left:30px;">保存</button>
+                                </div>
+                            </div>
+                        </form>
+                    </script>
+
+                </div>
+            </div>
+        </div>
+        <!--seller-list-->
+        <div class="seller-list">
+            <ul class="seller-list-title">
+                <li>卖方：曼威信息技术(上海)有限公司</li>
+                <li>单价</li>
+                <li>数量</li>
+                <li>金额</li>
+            </ul>
+            <div class="seller-list-border"></div>
+            <ul class="seller-list-content left">
+                <li class="left"><span class="left"><img src="../images/c2-2.png"/></span><span class="right">固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能</span>
+                </li>
+                <li class="left"><span class="yuan">￥</span><span class="shu">719</span><span class="yuan">.00</span>
+                </li>
+                <li class="left yuan">2件</li>
+                <li class="left"><span class="yuan orange">￥</span><span class="shu orange">1,438</span><span
+                        class="yuan orange">.00</span></li>
+            </ul>
+            <div class="seller-list-border seller-list-border-change "></div>
+            <textarea class="text-size form-control" placeholder="给卖家留言，告诉卖家您的特殊要求,不要超过200个字。"></textarea>
+            <div class="seller-list-bottom">
+                <div class="seller-list-bottom-left left">
+                    <input type="checkbox" class="seller-list-choose"/><span class="seller-list-invoice">需要开发票</span>
+                </div>
+                <div class="seller-list-bottom-right right">
+                    <span>商品总金额(含税):<span class="yuan orange">￥</span><span class="shu orange">1,438</span><span
+                            class="yuan orange">.00</span></span>
+                </div>
+            </div>
+        </div>
+        <!--seller-list-->
+        <div class="seller-list">
+            <ul class="seller-list-title">
+                <li>卖方：曼威信息技术(上海)有限公司</li>
+                <li>单价</li>
+                <li>数量</li>
+                <li>金额</li>
+            </ul>
+            <div class="seller-list-border"></div>
+            <ul class="seller-list-content left">
+                <li class="left"><span class="left"><img src="../images/c2-1.png"/></span><span class="right">固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能</span>
+                </li>
+                <li class="left"><span class="yuan">￥</span><span class="shu">719</span><span class="yuan">.00</span>
+                </li>
+                <li class="left yuan">2件</li>
+                <li class="left"><span class="yuan orange">￥</span><span class="shu orange">1,438</span><span
+                        class="yuan orange">.00</span></li>
+            </ul>
+            <div class="seller-list-dotted"></div>
+            <ul class="seller-list-content left">
+                <li class="left"><span class="left"><img src="../images/c2-1.png"/></span><span class="right">固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能固特异轮胎三能</span>
+                </li>
+                <li class="left"><span class="yuan">￥</span><span class="shu">719</span><span class="yuan">.00</span>
+                </li>
+                <li class="left yuan">2件</li>
+                <li class="left"><span class="yuan orange">￥</span><span class="shu orange">1,438</span><span
+                        class="yuan orange">.00</span></li>
+            </ul>
+            <div class="seller-list-border seller-list-border-change "></div>
+            <textarea class="text-size form-control" placeholder="给卖家留言，告诉卖家您的特殊要求,不要超过200个字。"></textarea>
+            <div class="seller-list-bottom">
+                <div class="seller-list-bottom-left left">
+                    <input type="checkbox" class="seller-list-choose"/><span class="seller-list-invoice">需要开发票</span>
+                </div>
+                <div class="seller-list-bottom-right right">
+                    <span>商品总金额(含税):<span class="yuan orange">￥</span><span class="shu orange">1,438</span><span
+                            class="yuan orange">.00</span></span>
+                </div>
+            </div>
+        </div>
+        <!--price-total-->
+        <div class="price-total">
+            <span class="total left">总计</span>
+            <div class="price-total-right right">
+                <span class="left distance-right">卖家:<span>1家</span></span>
+                <span class="left distance-right">商品种类:<span>1种</span></span>
+                <span class="left distance-right">数量总计:<span>2</span></span>
+                <span class="left distance-right-last-child"><span
+                        class="distance-right-last left">订单总额(含税):</span><span class="left"><span
+                        class="yuan orange">￥</span><span class="shu orange">1,438</span><span
+                        class="yuan orange">.00</span></span></span>
+                <button type="button" class="btn btn-default price-total-right-btn">订单提交</button>
+                <script type="text/xhtml" id="dialog-submit">
+                    <div id="dialog-box">
+                        <div class="dialog-box">
+                            <span class="iconfont icon-warning"></span>
+                            <p class="text-left" style="padding: 0 76px;">抱歉，您所选择的商品有部分缺货，是否继续提交其他商品订单？</p>
+                            <p class="text-left text-left-info" style="padding: 0 76px;">
+                                <span class="text-left-span text-left-span-title">缺货商品：</span>
+                                <span class="text-left-span text-left-span-info">固特异轮胎 三能 EXCELLENCE 235/60R18 103W Goodyear[奥迪Q5原配]、食同源林散养绿壳乌鸡蛋、巴拉巴拉巴拉巴拉巴拉巴拉。</span>
+                            </p>
+                            <p class="text-center">
+                                <button id="btn_close" type="button" class="btn btn-default" style="margin-top: 40px;margin-bottom: 39px;margin-right: 40px;">放弃提交</button>
+                                <button id="btn_ok" type="button" class="btn btn-primary" style="margin-top: 40px;margin-bottom: 39px;">继续提交</button>
+                            </p>
+                        </div>
+                    </div>
+                </script>
+            </div>
+        </div>
+    </div>
+</form>
+<div id="dialog-box">
+    <p class="text-center text-center-order-end">
+        <span class="iconfont icon-success" style="display:inline-block"></span>
+        <span class="order-end-text">您的订单已提交完成，继续选择商品请返回&nbsp;&nbsp;<a href="#">首页</a>&nbsp;&nbsp;,或前往&nbsp;&nbsp;<a href="#">订单中心</a>&nbsp;&nbsp;查看</span>
+    <p>
+</div>
+    <footer class="main-footer">
+        这是底部导航
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../js/base/jquery.min.js"></script>
+    <script src="../js/base/bootstrap.min.js"></script>
+    <!-- 自定义插件 -->
+    <script src="../js/plugins/bootbox.min.js"></script>
+    <script src="../js/plugins/bootstrap-select.min.js"></script>
+    <!-- 页面JS文件 -->
+    <script src="../js/c2.js"></script>
+    <!--百度地图 -->
+    <script src="http://api.map.baidu.com/api?v=2.0&ak=LtnWGV5eWw4dcRhBn8PkOAA30jw5OCGn"
+            type="text/javascript"></script>
+    <!-- 新增修改收货地址 html -->
+    <script type="text/xhtml" id="address-dialog-xhtml">
+        <div class="address-dialog-warp address-dialog">
+            <form id="address-dialog-form">
+                <div class="row-flex">
+                    <label class="item-flex-lab">名称:</label>
+                    <input type="text" class="item-flex-input"  placeholder="请输入名称" />
+
+                </div>
+
+                <div class="row-flex">
+                    <label class="item-flex-lab">地址搜索:</label>
+                    <div class="selectpicker-flex">
+                        <div class="item-flex">
+                            <div class="selectpicker-warp">
+                                <select class="selectpicker form-control" title="选择国家" name="country">
+                                    <!--初始化国家后台jps直接写死-->
+                                    <option>中国</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="item-flex">
+                            <div class="selectpicker-warp">
+                                <select class="selectpicker form-control " name="province" title="选择省份">
+                                    <!--初始化后台jps直接写死-->
+                                    <option>湖北</option>
+                                    <option>安徽</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="item-flex">
+                            <div class="selectpicker-warp">
+                                <!--初始化后台jps直接写死-->
+                                <select class="selectpicker form-control" name="city" title="选择城市">
+                                    <option>武汉</option>
+                                </select>
+                            </div>
+
+                        </div>
+                        <div class="item-flex">
+                            <div class="selectpicker-warp">
+                                <select class="selectpicker form-control" name="county" title="选择区县">
+                                    <!--初始化后台jps直接写死-->
+                                    <option>洪山区</option>
+                                    <option>高新区</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="item-flex-last"></div>
+                    </div>
+                </div>
+
+
+                <div class="row-flex">
+                    <div class="item-flex">
+                        <input type="text" class="item-flex-input"  name="district"   id="address-input" placeholder="详细地址"  />
+                    </div>
+                    <label class="item-flex-lab">
+                        <span class="error" id="district-error"></span>
+                    </label>
+                </div>
+                <div class="address-map-box" id="address-map"></div>
+                <div class="row-flex">
+                    新增收货地址会存入公司的地址库，属性默认为收货地址
+                </div>
+            </form>
+        </div>
+    </script>
+    <!-- 新增修改收货地址 -->
+    <script src="../js/addressDialog.js" type="text/javascript"></script>
+
+</body>
+</html>

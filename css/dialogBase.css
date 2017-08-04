@@ -1,0 +1,161 @@
+#dialog-box .dialog-box {
+  overflow: hidden;
+}
+#dialog-box .iconfont,
+.text-center-order-end .iconfont {
+  position: relative;
+  display: block;
+  height: 60px;
+  width: 60px;
+  margin: 41px auto;
+  margin-bottom: 24px;
+  border-radius: 50%;
+}
+#dialog-box .iconfont::before,
+.text-center-order-end .iconfont::before {
+  position: absolute;
+  font-size: 60px;
+  color: #fc8a26;
+  display: inline-block;
+  top: -12px;
+}
+#dialog-box .text-center-order-end .icon-success::before {
+  color: #2ac343;
+}
+#dialog-box .text-center,
+.text-left {
+  font-size: 14px;
+  color: #2f2f2f;
+}
+#dialog-box .text-left-info {
+  margin-top: 20px;
+}
+#dialog-box .text-left-span {
+  display: block;
+  float: left;
+}
+#dialog-box .text-left-span-info {
+  width: 80%;
+}
+#dialog-box .dialog-star {
+  color: #f00;
+  margin-left: 2px;
+}
+#dialog-box .dialog-box label {
+  font-weight: 100;
+  margin-bottom: 20px;
+  overflow: hidden;
+  margin-bottom: 28px;
+  margin-top: 10px;
+}
+#dialog-box .dialog-ordinary {
+  margin-right: 80px;
+}
+#dialog-box input[type=radio] {
+  margin-right: 10px;
+  padding-top: 4px;
+  float: left;
+}
+#dialog-box input[type=text],
+textarea {
+  width: 680px;
+  height: 48px;
+  padding-left: 16px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  color: #999;
+}
+#dialog-box textarea {
+  height: 120px;
+  padding-top: 16px;
+}
+#dialog-box .text-left-alert {
+  font-size: 12px;
+  color: #666;
+}
+/*底部*/
+.shop-dialog .modal-footer {
+  text-align: center;
+}
+.shop-dialog .modal-title {
+  text-align: center;
+  font-size: 16px;
+  color: #2f2f2f;
+}
+.shop-dialog .btn-primary {
+  font-size: 16px;
+  padding: 6px 44px;
+  background-color: #fc8a26;
+  border: 1px solid #fc8026;
+}
+.shop-dialog .btn-primary:focus {
+  background-color: #fc8a26;
+  border: 1px solid #fc8026;
+}
+.shop-dialog .btn-primary:visited {
+  background-color: #fc8a26;
+  border: 1px solid #fc8026;
+}
+.shop-dialog .btn-primary:hover {
+  background-color: #fd983f;
+  border: 1px solid #fd983f;
+}
+.shop-dialog .btn-primary:active {
+  background-color: #fc8a26;
+  border: 1px solid #fc8026;
+}
+.shop-dialog .btn-primary.active.focus,
+.shop-dialog .btn-primary.active:focus,
+.shop-dialog .btn-primary.active:hover,
+.shop-dialog .btn-primary:active.focus,
+.shop-dialog .btn-primary:active:focus,
+.shop-dialog .btn-primary:active:hover,
+.shop-dialog .open > .dropdown-toggle.btn-primary.focus,
+.shop-dialog .open > .dropdown-toggle.btn-primary:focus,
+.shop-dialog .open > .dropdown-toggle.btn-primary:hover {
+  background-color: #fc8a26;
+  border: 1px solid #fc8026;
+}
+.shop-dialog .btn-default {
+  background-color: #fff;
+  color: #2f2f2f;
+  padding: 6px 44px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+.shop-dialog .btn-default:hover {
+  background-color: #fff;
+  border: 1px solid #fc8026;
+  color: #fc8026;
+}
+.shop-dialog .btn-default:focus {
+  background-color: #fff;
+  border: 1px solid #fc8026;
+  color: #fc8026;
+}
+.shop-dialog .btn-default:visited {
+  background-color: #fff;
+  border: 1px solid #fc8026;
+  color: #fc8026;
+}
+.shop-dialog .btn-default:active {
+  background-color: #fff;
+  border: 1px solid #fc8026;
+  color: #fc8026;
+}
+.shop-dialog .btn-default.active.focus,
+.shop-dialog .btn-default.active:focus,
+.shop-dialog .btn-default.active:hover,
+.shop-dialog .btn-default:active.focus,
+.shop-dialog .btn-default:active:focus,
+.shop-dialog .btn-default:active:hover,
+.shop-dialog .open > .dropdown-toggle.btn-default.focus,
+.shop-dialog .open > .dropdown-toggle.btn-default:focus,
+.shop-dialog .open > .dropdown-toggle.btn-default:hover {
+  background-color: #fff;
+  border: 1px solid #fc8026;
+  color: #fc8026;
+}

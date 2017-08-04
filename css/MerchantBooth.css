@@ -1,0 +1,38 @@
+body{
+    font-family:PingFangSC-Regular;
+    font-size: 12px;
+}
+.new-release p{
+    height:18px;
+    line-height: 18px;
+    margin:40px auto 12px;
+    font-size:18px;
+    color:#2f2f2f;
+    text-align:center;
+}
+.new-release div{
+    height:14px;
+    line-height:14px;
+    text-align:center;
+    margin-bottom:30px;
+}
+.new-release  a{
+    color:#ff8b2a;
+    width:25px;
+    height:100%;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+.companyprofile-container,.contact-container{
+    margin:20px auto;
+    background:#ffffff;
+    border-radius:5px;
+}
+.main .product-main{
+    margin-bottom:0;
+}
+.main .contact-container{
+    margin-bottom:59px;
+}

@@ -1,0 +1,173 @@
+
+.product-background{
+    width:100%;
+    height:400px;
+    padding-top:48px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background:url("../images/product-background.png") no-repeat center center;
+}
+.product-title{
+    width:584px;
+    height:91px;
+    margin:auto;
+}
+.product-title img{
+    width:80px;
+    height:80px;
+    margin:1px 23px 10px 22px;
+}
+.product-img,.product-name{
+    float: left;
+}
+.product-name{
+    width:436px;
+    height:91px;
+    text-align: center;
+}
+.product-name h1,.product-name h5{
+    font-family:PingFangSC-Regular;
+    color:#ffffff;
+    letter-spacing:0;
+}
+.product-name h1{
+    font-size: 36px;
+    margin:21px 0 12px 0;
+}
+.product-name h5{
+    font-size:14px;
+}
+.product-nav{
+    width:576px;
+    height:32px;
+    margin:37px auto 0;
+    color:#4f5362;
+    text-align: center;
+    background:#ffffff;
+    border-radius:3px;
+}
+.product-nav .col-md-3{
+    border-right:1px solid #4f5362;
+    width:144px;
+    height:32px;
+    line-height: 32px;
+    cursor: pointer;
+}
+.product-nav .col-md-3.border-right{
+    border-right:0;
+}
+.product-nav .col-md-3.bd{
+    background:#4f5362;
+    color:#fff;
+}
+.product-main{
+    background:#ffffff;
+    width:1240px;
+    margin:-164px auto 0;
+
+}
+
+
+/*------------------头部样式--------------*/
+.header-wrapper{
+    position: relative;
+    width: 1240px;
+    height: 100%;
+    margin: 0 auto;
+    font-family:PingFangSC-Regular;
+}
+.header-wrapper .header-logo{
+    background:#fc8a26;
+    width:200px;
+    height:140px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+.header-wrapper .herder-top{
+    padding-left: 232px;
+    height: 40px;
+    line-height: 40px;
+    border-bottom:1px solid #e5e5e5;
+}
+.header-wrapper .herder-top span{
+    font-size:12px;
+    color:#666666;
+    letter-spacing:0;
+    cursor: pointer;
+}
+.header-wrapper .header-top-left{
+    float: left;
+}
+.header-wrapper .header-top-right{
+    float: right;
+}
+.header-wrapper .header-top-right .purchase-list em{
+    font-size:12px;
+    color:#ffffff;
+    background:#fc8a26;
+    width:20px;
+    height:20px;
+    border-radius:100%;
+    display: inline-block;
+    line-height: 20px;
+    font-style: normal;
+}
+.header-wrapper .header-top-left span{
+    margin-right: 16px;
+}
+.header-wrapper .header-top-right span{
+    margin-left: 30px;
+}
+.header-wrapper .herder-down{
+    padding-left: 232px;
+}
+.header-wrapper .herder-down .header-down-left{
+    float: left;
+}
+.header-wrapper .herder-down .header-down-right{
+    float: right;
+    height: 100px;
+    margin-right: 24px;
+}
+.header-wrapper .herder-down .header-down-left h3{
+    font-size:20px;
+    color:#393939;
+    letter-spacing:0;
+    margin-top: 40px;
+}
+.header-wrapper .herder-down .header-down-right .search-input{
+    background:#ffffff;
+    border:1px solid #cdcdcd;
+    border-radius:3px;
+    width:292px;
+    height:38px;
+    margin-top: 30px;
+    float: left;
+    outline: none;
+    padding-left: 15px;
+}
+.header-wrapper .herder-down .header-down-right .search-button{
+    border:1px solid #cdcdcd;
+    border-radius:6px;
+    width:76px;
+    height:38px;
+    line-height: 38px;
+    float: left;
+    margin-top: 30px;
+    margin-left: 10px;
+    background: none;
+    font-size:12px;
+    color:#7e7e7e;
+    outline: none;
+}
+.header-wrapper .herder-down .header-down-right .shop-search-button{
+    background:#fc8a26;
+    color:#FFF;
+    border: 0;
+}
+
+

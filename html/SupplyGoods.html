@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>商品详情</title>
+    <!-- Bootstrap -->
+    <link href="../css/base/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/base/bootstrap-theme.css" rel="stylesheet">
+    <link href="../css/iconfont.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+    <!-- 下面导入插件所需样式 -->
+    <link href="../css/plugins/bootstrap-select.css" rel="stylesheet">
+    <!-- 下面导入页面所需样式，最好基于bootstrap写法 -->
+    <link href="../css/ProductCommon.css" rel="stylesheet">
+    <link href="../css/SupplyGoods.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="main-header">
+        <div class="header-wrapper">
+            <div class="header-logo">
+                <img src="../images/logo.png">
+            </div>
+            <div class="herder-top">
+                <div class="header-top-left">
+                    <span class="header-top-left-tip">爱定宝欢迎您！</span>
+                    <span class="header-top-left-login">登录</span>
+                    <span class="header-top-left-register">申请入驻</span>
+                </div>
+                <div class="header-top-right">
+                    <span class="purchase-list">进货单<em>99</em></span>
+                    <span>申请入驻</span>
+                    <span>客服中心</span>
+                </div>
+            </div>
+            <div class="herder-down">
+                <div class="header-down-left">
+                    <h3>上海卡卡汽车配件有限公司</h3>
+                </div>
+                <div class="header-down-right">
+                    <input class="search-input" type="text" placeholder="请输入商品名称">
+                    <button class="search-button shop-search-button">搜本店</button>
+                    <button class="search-button station-search-button">搜全站</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="product">
+        <div class="product-background">
+            <div class="product-title">
+                <div class="product-img">
+                    <img src="../images/product-titlelog.png">
+                </div>
+                <div  class="product-name">
+                    <h1>上海卡卡汽车配件有限公司</h1>
+                    <h5>安防消防；电子制造</h5>
+                </div>
+            </div>
+            <div class="row product-nav">
+                <div class="col-md-3">首页</div>
+                <div class="col-md-3 bd">供应商品</div>
+                <div class="col-md-3">公司介绍</div>
+                <div class="col-md-3 border-right">联系方式</div>
+            </div>
+        </div>
+        <div class="row product-main">
+            <div class="col-md-12">
+                <div class="product-position">
+                </div>
+            </div>
+            <div class="col-md-12 content">
+                <div class="col-md-3" style="display:inline">
+                    <div class="menu">
+                        <ul>
+                            <li class="menu-title" onclick="getGoodsDetail('all')">全部商品</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-9" style="display:inline;padding:0px">
+                    <div class="goods-top">
+                        <div class="goods-total">共<span>999</span>个商品</div>
+                        <div class="goods-sort">
+                            <span class="default-sort active-sort">默认排序</span>
+                            <span class="sort-choose">上架时间<span class="iconfont icon-order-default order-icon"></span></span>
+                            <span class="sort-choose">价格<span class="iconfont icon-order-default order-icon"></span></span>
+                        </div>
+                    </div>
+                    <div class="goods-list">
+
+                    </div>
+                    <div class="goods-page">
+                         <nav class="page" aria-label="...">
+                            <ul class="pagination">
+                                <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                                <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                                <li><a href="#">2 <span class="sr-only">(current)</span></a></li>
+                                <li><a href="#">3 <span class="sr-only">(current)</span></a></li>
+                                <li><a href="#">4 <span class="sr-only">(current)</span></a></li>
+                                <li><a href="#">5 <span class="sr-only">(current)</span></a></li>
+                                <li><a href="#">... <span class="sr-only">(current)</span></a></li>
+                                <li><a href="#">10 <span class="sr-only">(current)</span></a></li>
+                                <li><a href="#">11 <span class="sr-only">(current)</span></a></li>
+                                <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+                            </ul>
+                            <div class="jump">
+                                <span class="jump-text">调至</span>
+                                <input class="input" type="number">
+                                <a href="#" class="go">GO</a>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="main-footer">
+        这是底部导航
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../js/base/jquery.min.js"></script>
+    <script src="../js/base/bootstrap.min.js"></script>
+    <!-- 自定义插件 -->
+    <script src="../js/plugins/bootbox.min.js"></script>
+    <script src="../js/plugins/bootstrap-select.min.js"></script>
+    <!-- 页面JS文件 -->
+    <script src="../js/SupplyGoods.js"></script>
+  </body>
+</html>

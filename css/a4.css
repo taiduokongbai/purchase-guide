@@ -1,0 +1,221 @@
+.notice-position-title{
+    padding: 18px 0;
+}
+.notice-warp,.notice-detail{
+    background-color: #fff;
+    margin-bottom: 60px;
+}
+.notice-warp-con{
+    padding: 0 220px;
+    height: 100%;
+}
+.notice-warp-title{
+    line-height: 97px;
+    font-size: 18px;
+    text-align: center;
+    color: #fc8a26;
+}
+.notice-warp-con-ul{
+    border-top: 1px solid #e5e5e5;
+    margin: 0;
+    padding: 0;
+}
+.notice-warp-con-ul li{  
+    list-style: none;
+    line-height: 66px;
+    font-size: 18px;
+    color: #666666;
+    border-bottom: 1px solid #e5e5e5;
+}
+.notice-warp-con-ul li a{  
+    font-size: 18px;
+    color: #666666;
+}
+.notice-warp-con-date{
+    float: right;
+    font-size: 18px;
+    color: #999999;
+}
+.notice-warp-con-other{
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    color: #666666;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+.notice-detail-top{
+    padding-top: 40px;
+    padding-bottom: 14px;
+    text-align: center;
+}
+.notice-detail-top-title{
+    font-size: 18px;
+    color: #2f2f2f;
+    padding-bottom: 20px;
+}
+.notice-detail-top-date{
+    font-size: 14px;
+    color: #999999;
+}
+.notice-detail-con{
+    padding: 0 80px;
+}
+.notice-detail-con-return{
+    font-size: 14px;
+    color: #2f2f2f;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+.header{
+    text-align: center;
+    color: #CCC;
+    background-color: #FFF;
+    height: 40px;
+    line-height: 40px;
+        border: 1px solid #e5e5e5;
+}
+.header-inner{
+    color: #CCC;
+    background-color: #FFF;
+    width: 100%;
+    text-align: center;
+}
+.header-logo{
+    /*position: relative;*/
+    width: 200px;
+    float: left;
+    margin-top: -40px;
+    /*z-index: 9999;*/
+}
+.header-top-left-tit{
+    padding-left: 30px;
+}
+.header-top-left-tit-next{
+    padding-left: 15px;
+}
+.header-top{
+    width: 100%;
+    line-height: 40px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.header-top-con{
+    margin: 0 auto;
+    width: 1240px;
+    padding-left: 215px;
+    height: 40px;
+    padding-right: 15px;
+}
+.header-top-left{
+    float: left;
+}
+.header-top-rigth{
+    float: right;
+}
+.header-top-rigth-number{
+    width: 20px;
+    height: 20px;
+    background: #e20d0d;
+    border-radius: 50%;
+}
+.hearder-down{
+    float: left;
+    width: 1010px;
+    line-height: 100px;
+}
+.hearder-down-left{
+    float: left;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+.hearder-down-left ul{
+    margin: 0;
+    padding: 0;
+}
+.hearder-down-left .li{
+    list-style: none;
+    float: left;
+    font-size: 16px;
+    color: #2f2f2f;
+    width: 128px;
+    position: relative;
+}
+.hearder-down-left .li:hover{
+    color: #fc8a26;
+}
+.hearder-down-left .li:hover .caret{
+    border-top: 5px dashed #fc8a26;
+}
+.hearder-down-left .li:hover .hearder-down-left-con{
+    display: block;
+}
+.hearder-down-left .caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 5px dashed;
+    border-top: 4px solid\9;
+    border-right: 6px solid transparent;
+    border-left: 5px solid transparent;
+}
+.hearder-down-left-con{
+    display: none;
+    width: 128px;
+    background: #ffffff;
+    border:1px solid #cccccc;
+    box-shadow: 0 0 8px rgba(0,0,0,0.15);
+    z-index: 999;
+}
+.hearder-down-left-con li{
+    list-style: none;
+    font-size: 16px;
+    color: #2f2f2f;
+    height: 50px;
+    line-height: 50px;
+}
+.hearder-down-left-con li:hover{
+    font-size: 16px;
+    color: #fc8a26;
+    background: #f5f5f5;
+}
+.hearder-down-rigth{
+    float: right;
+    /*height: 100px;
+    line-height: 100px;*/
+    transform: translateY(70%);
+}
+.hearder-down-right-search{
+    height: 40px;
+    line-height: 40px;
+    width: 294px;
+    border-radius: 3px;
+    border:1px solid #fc8a26;
+}
+.hearder-down-right-input{
+    height: 38px;
+    line-height: 38px;
+    width: 246px;
+    border: 0;
+    float: left;
+    padding-left: 16px;
+}
+.hearder-down-right-input:focus {
+    outline: none;
+    outline-color: transparent;
+}
+/*.hearder-down-left-tit{
+    padding-left: 30px;
+}
+.hearder-down-left-tit-next{
+    padding-left: 50px;
+}*/
+.hearder-down-left span{
+    font-size: 16px;
+    color: #2f2f2f;
+}

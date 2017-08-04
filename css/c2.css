@@ -1,0 +1,328 @@
+/*.dialog-test .modal-dialog{
+    width: 480px;
+}*/
+/*dialog样式*/
+.dialog-submit .modal-dialog{
+     width: 604px;
+}
+.dialog-add-invoice .modal-dialog{
+     width: 880px;
+}
+.dialog-add-contact .modal-dialog{
+     width: 640px;
+}
+#dialog-box .text-center-order-end{
+    margin-top: 228px;
+    margin-bottom: 270px;
+    /*display: none;*/
+}
+#dialog-box .text-center-order-end span{
+    vertical-align:middle;
+    display:inline-block;
+    margin-bottom: 0;
+    margin: 0;
+}
+#dialog-box .text-center-order-end .order-end-text{
+    margin-left: 60px;
+}
+#dialog-box .text-center-order-end .order-end-text a{
+    color: #fc8a26;
+}
+body, p, a, h1, h2, h3, h4, h5, h6, img, input, ul, li, ol, dl, dd, dt,div{
+    padding: 0;
+    margin: 0;
+}
+img{
+    border: 0;
+}
+input{
+    outline: none;
+}
+a{
+    text-decoration: none;
+}
+ul, ol, li{
+    list-style: none;
+}
+
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+/*-----------header--------------*/
+#c2-header{
+    height: 140px;
+}
+#c2-header .c2-header-title{
+    border: 1px solid #e5e5e5;
+    clear: both;
+    height: 39px;
+    overflow: hidden;
+}
+.c2-header-content-left,.c2-header-content-right{
+    height: 39px;
+}
+.c2-header-content-left{
+    height: 39px;
+    line-height: 39px;
+    margin-left: 230px;
+}
+.c2-header-content-left span:nth-child(1){
+    color: #666666;
+    font-size: 12px;
+    margin-right: 30px;
+}
+.c2-header-content-left span:nth-child(2){
+    color: #2f2f2f;
+    font-size: 12px;
+}
+/*.c2-header-content-right li{
+    height: 39px;
+    line-height: 39px;
+    font-size: 12px;
+    color: #2f2f2f;
+}*/
+.c2-header-content{
+    width: 1240px;
+    height: 39px;
+    margin: 0 auto;
+}
+.c2-header-title-bottom{
+    height: 100px;
+    width: 1240px;
+    margin: 0 auto;
+    position:relative;
+}
+.c2-header-title-bottom h3{
+   font-size: 20px;
+   color:#2f2f2f;
+   height: 100px;
+   line-height: 100px;
+   margin-left: 230px;
+}
+.C2-logo{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+/*-----------main--------------*/
+
+#c2-container{
+    width: 1240px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+/*confirm-receipt-information*/
+.confirm-receipt-information{
+    padding: 30px;
+    background: #fff;
+}
+.confirm-receipt-information h3{
+    font-size: 14px;
+    color:#2f2f2f;
+    margin-bottom: 28px;
+}
+.select-contacts h3,.select-shipping-address h3{
+    font-size: 12px;
+    color:#2f2f2f;
+    margin-bottom: 12px; 
+}
+.select-contacts .select-contacts-title-two,.select-shipping-address .select-shipping-address-title-two{
+    color:#fc8a26;
+    cursor: pointer;
+}
+.select-contacts,.select-shipping-address{
+    height: 84px;
+}
+.confirm-receipt-information-border{
+    border-bottom: 1px solid #e5e5e5;
+    clear: both;
+    margin-bottom: 30px;
+}
+.confirm-invoice-information h3{
+    font-size: 14px;
+    color: #2f2f2f;
+    margin-bottom: 30px;
+}
+.confirm-info span{
+   display: inline-block;
+   font-size: 12px;
+   color: #2f2f2f;
+}
+.confirm-info .new-invoice-information{
+     color: #fc8a26;
+     cursor: pointer;
+}
+.confirm-info span:nth-child(3){
+    color: #fc8a26;
+}
+.confirm-info span:nth-child(2),.confirm-info span:nth-child(3){
+    margin-left: 30px;
+}
+/*-----------seller-list-----------*/
+.seller-list{
+    padding: 26px 30px 0px 30px;
+    background: #fff;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.seller-list .seller-list-title{
+    margin-bottom: 16px;
+    width:1280px;
+}
+.seller-list .seller-list-title li{
+    display: inline-block;
+}
+.seller-list .seller-list-title li:nth-child(1){
+    font-size: 12px;
+    color: #2f2f2f;
+    width: 544px;
+}
+.seller-list .seller-list-title li:nth-child(2){
+    font-size: 12px;
+    color: #666666;
+    width:218px;
+    text-align: center
+}
+.seller-list .seller-list-title li:nth-child(3){
+    font-size: 12px;
+    color: #666666;
+    width:200px;
+    text-align: center
+}
+.seller-list .seller-list-title li:nth-child(4){
+    font-size: 12px;
+    color: #666666;
+    width:218px;
+    text-align: center;
+}
+.seller-list .seller-list-border{
+    border-bottom: 1px solid #e5e5e5
+}
+.seller-list-content{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.seller-list-content li{
+    display: block;
+}
+.seller-list-content li:nth-child(1){
+    width: 544px;
+}
+.seller-list-content li:nth-child(1) span:nth-child(2){
+    width: 346px;
+    height: 38px;
+    margin: 31px 34px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*white-space: normal;*/
+    display: -webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient: vertical;
+    vertical-align: middle;
+}
+.seller-list-content li:nth-child(2){
+    width: 218px;
+    vertical-align: middle;
+    height: 100px;
+    line-height:100px; 
+    text-align: center;
+}
+.seller-list-content li:nth-child(3){
+    width: 200px;
+    vertical-align: middle;
+    height: 100px;
+    line-height:100px;
+    text-align: center;
+}
+.seller-list-content li:nth-child(4){
+    width: 218px;
+    vertical-align: middle;
+    height:100px;
+    line-height:100px;
+    text-align: center;
+}
+.yuan{
+    font-size:14px;
+    color:#2f2f2f;
+}
+.shu{
+    font-size:24px;
+    color:#2f2f2f;
+}
+.orange{
+    color: #fc8a26;
+}
+.seller-list-border-change{
+    clear: both;
+}
+.text-size{
+   resize: none;
+   width:1180px;
+   margin-top: 20px;
+   font-size: 12px;
+}
+textarea.form-control{
+    height: 60px;
+}
+.seller-list-bottom{
+    overflow: hidden;
+    height: 60px;
+    line-height: 60px;
+}
+input[type=checkbox]{
+    height: 16px;
+    width: 16px;
+    border: 0;
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+.seller-list-invoice{
+    margin-left: 6px;
+    font-size: 12px;
+    color: #666666;
+    vertical-align: middle;
+    display: inline-block;
+}
+.seller-list-dotted{
+    border: 1px dashed #e5e5e5;
+    clear: both;
+}
+/*-----------price-total-----------*/
+.price-total{
+    height: 60px;
+    background: #fff;
+    line-height: 60px;
+    margin-top: 20px;
+}
+.price-total .total{
+    margin-left: 30px;
+}
+.price-total .price-total{
+    font-size:14px;
+    color: #2f2f2f;
+}
+.price-total-right .price-total-right-btn{
+    background-color: #fc8a26;
+    height: 60px;
+    width: 120px;
+    color: #ffffff;
+    border: 0;
+    font-size: 20px;
+    padding: 0;
+}
+.distance-right{
+    margin-right: 18px;
+    display: block;
+}
+.distance-right-last{
+    margin-right: 10px;
+}
+.distance-right-last-child{
+    margin-right: 30px;
+}
